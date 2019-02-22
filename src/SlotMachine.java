@@ -8,6 +8,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class SlotMachine implements ActionListener {
@@ -66,6 +67,13 @@ public class SlotMachine implements ActionListener {
 		panel.add(label2);
 		panel.add(label3);
 		frame.pack();
+		if (rand1 == 0 && rand2 == 0 && rand3 == 0) {
+			JOptionPane.showMessageDialog(null, "You win!");
+		} else if (rand1 == 1 && rand2 == 1 && rand3 == 1) {
+			JOptionPane.showMessageDialog(null, "You win!");
+		} else if (rand1 == 2 && rand2 == 2 && rand3 == 2) {
+			JOptionPane.showMessageDialog(null, "You win!");
+		}
 	}
 
 	public JLabel loadImage(String fileName) {
